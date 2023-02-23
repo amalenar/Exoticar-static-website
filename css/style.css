@@ -1,0 +1,258 @@
+/* =================CSS-RESET=================*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* =================BASIC-STYLE=================*/
+
+body{
+	color: #fff;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.4;
+	/*text-decoration-color: white; */
+}
+
+/* =====================================Header====================================*/
+
+.wrapper{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.page-header{
+    height: 54px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+}
+.page-header .logo{
+    float: left;
+    padding-top: 8px;
+    
+}
+.header-nav ul{
+    float: right;
+}
+
+
+.header-nav li{
+    float: left;
+    padding-left: 100px;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+.header-nav li a{
+  
+    list-style-type: none;
+    text-transform: uppercase;
+    text-decoration: none;
+   
+    color: whitesmoke;
+
+}
+.header-nav li a:hover{
+    color: slategray;
+}
+          /* =========================================Main==============================*/
+
+
+
+/* =================Banner=================*/
+
+
+.banner{
+    background-image: url(../images/banner.png);
+    height: 612px;
+    background-size: cover;
+}
+
+.banner-block{
+   margin-left: 0%;
+   margin-right: 0%;
+   padding-top: 275px;
+   box-sizing: border-box;
+   text-align: center;
+}
+
+.title{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.learn-more{
+    margin-top: 10px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 800;
+    color: #fff;
+    background-color: red;
+    border-width: 0ch;
+    border-radius: 5px;
+    
+}
+.learn-more:active{
+    background-color: white;
+    color: red;
+}
+.learn-more:hover{
+    opacity: .5;
+}
+/* =================Articles section=================*/
+
+.articles{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcf7f7+50,0a0505+50,fcf7f7+50,fcf7f7+50,0a0505+50,0a0505+50 */
+background: #fcf7f7; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #fcf7f7 50%, #0a0505 50%, #fcf7f7 50%, #fcf7f7 50%, #0a0505 50%, #0a0505 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #fcf7f7 50%,#0a0505 50%,#fcf7f7 50%,#fcf7f7 50%,#0a0505 50%,#0a0505 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(96deg,  #fcf7f7 50%,#0a0505 50%,#fcf7f7 50%,#fcf7f7 50%,#0a0505 50%,#0a0505 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf7f7', endColorstr='#0a0505',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.articles .wrapper::after,.page-footer .wrapper::after{
+    content : '.';
+    font-size: 0;
+    height: 1px;
+    width: 100px;
+    clear: both;
+    display: block;
+    
+
+}
+
+article{
+    margin-top: 50px;
+    width: 50%;
+    float: left;
+}
+article>h2{
+    font-size: 40px;
+    font-weight: normal;
+    padding-bottom: 20px;
+
+}
+
+.quote{
+    font-size: 22px;
+    font-style: italic;
+    margin-bottom: 20px;
+    
+}
+.text{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+.left-article{
+    color: #0a0505;
+    padding-right: 70px;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+}
+.right-article{
+    padding-left: 70px;
+    box-sizing: border-box;
+}
+
+h2::after{
+    margin-top: 20px;
+    content: '.';
+    font-size: 0;
+    height: 1px;
+    width: 40px;
+    background-color: red;
+    display: block;
+    margin-bottom: 20px;
+    
+}
+
+
+      /* =========================================Footer==============================*/
+
+.page-footer{
+    background-color: rgba(0, 0, 0, 0.849);
+    justify-content: space-between;
+}
+
+.footer-col{
+    color: slategray;
+    float: left;
+    width: 25%;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.footer-col h3{
+    font-size: 15px;
+    font-weight:100;
+}
+
+.footer-col li{
+    font-size: 12px;
+
+}
+.footer-col li:hover{
+    color: white;
+}
+.page-footer h3::after{
+    margin-top: 20px;
+    content: '.';
+    font-size: 0;
+    height: 1px;
+    width: 100px;
+    background-color: rgb(170, 159, 159);
+    display: block;
+    margin-bottom: 20px;
+    
+}
+
+.icon-google,.icon-facebook,.icon-twitter{
+    float: left;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
